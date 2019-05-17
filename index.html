@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Confirmation Popup - Sitemate</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <!-- trigger button -->
+        <div>
+            <button data-trigger="modal" data-target="modalA">Trigger A</button>
+            <button data-trigger="modal" data-target="modalB">Trigger B</button>
+            <button id="testModal">
+                Trigger Obj
+            </button>
+        </div>
+
+        <!-- answer text -->
+        <p id="answer-text"></p>
+
+        <!-- confirmation popup -->
+        <div class="modal" id="modalA">
+            <div class="modal-content">
+                <div class="modal-message">
+                    Modal A confirmation dialog. And it has a main message
+                </div>
+
+                <div class="modal-actions">
+                    <button data-dismiss="modalA">Yes</button>
+                    <button>No</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- confirmation popup -->
+        <div class="modal" id="modalB">
+            <div class="modal-content">
+                <div class="modal-message">
+                    Modal B confirmation dialog. And it has a main message
+                </div>
+
+                <div class="modal-actions">
+                    <button>Yes</button>
+                    <button>No</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- obj modal -->
+        <div id="modalObj"></div>
+
+        <script type="text/javascript" src="modal.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
